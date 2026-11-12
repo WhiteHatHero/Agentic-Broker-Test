@@ -13,6 +13,8 @@ Python proof of concept connecting to GitHub's hosted MCP endpoint. It initializ
 
 ```bash
 git clone https://github.com/WhiteHatHero/Agentic-Broker-Test.git
+```
+```bash
 cd Agentic-Broker-Test
 python3.13 -m venv .venv
 source .venv/bin/activate   # PowerShell: .venv\Scripts\Activate.ps1
@@ -20,7 +22,7 @@ python -m pip install -r requirements.txt
 cp .env.example .env        # PowerShell: Copy-Item .env.example .env
 ```
 
-Edit `.env`: supply your **personal** `GITHUB_TOKEN`; set `REPO_OWNER` and `REPO_NAME` to a repository your account can read; optionally set `NETSKOPE_CA_PEM` to your locally approved CA certificate path. Never commit tokens, `.env`, or certificates.
+Edit `.env`: supply your **personal** `GITHUB_TOKEN`; set `REPO_OWNER` and `REPO_NAME` to a repository your account can read; set `NETSKOPE_CA_PEM` (get this from Keychain on Mac or certlm.msc for Windows) to your locally approved CA certificate path. Never commit tokens, `.env`, or certificates.
 
 ## Run
 
